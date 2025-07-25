@@ -54,25 +54,26 @@
                 <a href="#servicios" class="nav-link">Servicios</a>
                 <a href="#precios" class="nav-link">Precios</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
+                
+                <!-- Mover nav-actions dentro del menú móvil -->
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                        <i data-lucide="moon" class="theme-icon"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="requestDemo()">
+                        <i data-lucide="play-circle"></i>
+                        <span>Demo</span>
+                    </button>
+                    <button class="btn btn-primary" onclick="redirectToLogin()">
+                        <i data-lucide="log-in"></i>
+                        <span>Iniciar Sesión</span>
+                    </button>
+                </div>
             </div>
             
-            <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
-                    <i data-lucide="moon" class="theme-icon"></i>
-                </button>
-            
-                <button class="btn btn-outline" onclick="requestDemo()">
-                    <i data-lucide="play-circle"></i>
-                    <span>Demo</span>
-                </button>
-                <button class="btn btn-primary" onclick="redirectToLogin()">
-                    <i data-lucide="log-in"></i>
-                    <span>Iniciar Sesión</span>
-                </button>
-                <button class="nav-toggle" id="nav-toggle">
-                    <i data-lucide="menu"></i>
-                </button>
-            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
     </nav>
 
@@ -144,7 +145,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="servicios">
+    <section class="services section" id="servicios">
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">
