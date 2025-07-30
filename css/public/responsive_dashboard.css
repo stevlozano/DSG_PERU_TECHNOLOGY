@@ -1,0 +1,115 @@
+
+/* Mejoras Responsive */
+@media screen and (max-width: 1024px) {
+    .content main .insights {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .content main .bottom-data {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .content main .bottom-data .orders,
+    .content main .bottom-data .reminders {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar .logo {
+        height: 70px;
+        padding: 12px 16px;
+    }
+    
+    .sidebar .logo .logo-icon {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .sidebar .logo .logo-name {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar .logo {
+        height: 64px;
+        padding: 10px 12px;
+        justify-content: flex-start;
+    }
+    
+    .sidebar .logo .logo-icon {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+    
+    .sidebar .logo .logo-name {
+        font-size: 16px;
+    }
+    
+    /* Cuando el sidebar está oculto en móvil */
+    .sidebar:not(.show) .logo .logo-name {
+        display: block;
+        opacity: 1;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar .logo {
+        height: 60px;
+        padding: 8px 10px;
+    }
+    
+    .sidebar .logo .logo-icon {
+        width: 36px;
+        height: 36px;
+        padding: 4px;
+    }
+    
+    .sidebar .logo .logo-name {
+        font-size: 14px;
+    }
+
+}
+
+/* Animaciones suaves para todas las transiciones */
+.sidebar .logo,
+.sidebar .logo .logo-icon,
+.sidebar .logo .logo-name {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+/* Mejoras adicionales para mejor UX */
+.sidebar .side-menu li a:hover {
+    background: var(--grey);
+    transform: translateX(4px);
+}
+
+.content nav .notif:hover,
+.content nav .profile:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.content main .insights li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+.sidebar,
+.content,
+.sidebar .side-menu li a {
+    transition: all 0.3s ease;
+}
