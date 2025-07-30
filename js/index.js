@@ -374,9 +374,9 @@ function redirectToLogin() {
     
     // Redirect to the dashboard login
     if (isAboutPage) {
-        window.location.href = '../../src/formularios/login_prueba.html'; // This would be your React app
+        window.location.href = './formularios/login_prueba.html'; // This would be your React app
     } else {
-        window.location.href = '../../src/formularios/login_prueba.html'; // This would be your React app
+        window.location.href = './formularios/login_prueba.html'; // This would be your React app
     }
 }
 

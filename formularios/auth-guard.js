@@ -120,7 +120,7 @@ class AuthGuard {
         
         // Redirigir al login
         setTimeout(() => {
-            window.location.href = '../formularios/login_prueba.html';
+            window.location.href = './formularios/login_prueba.html';
         }, 1000);
     }
 
